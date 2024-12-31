@@ -1,0 +1,40 @@
+import { model,  Schema } from "mongoose";
+import { TTeamMember } from "./teamMember.interface";
+
+const teamMemberSchema: Schema = new Schema({
+    teamCoverPhoto: { type: String, required: true },
+    managingDirectorName: { type: String, required: true },
+    managingDirectorDesignation: { type: String, required: true },
+    managingDirectorDetails: { type: String, required: true },
+    managingDirectorImage: { type: String, required: true },
+    boardMemberTwoName: { type: String, required: true },
+    boardMemberTwoDesignation: { type: String, required: true },
+    boardMemberTwoBio: { type: String, required: true },
+    boardMemberTwoImage: { type: String, required: true },
+    boardMemberThreeName: { type: String, required: true },
+    boardMemberThreeDesignation: { type: String, required: true },
+    boardMemberThreeBio: { type: String, required: true },
+    boardMemberThreeImage: { type: String, required: true },
+    boardMemberFourName: { type: String, required: true },
+    boardMemberFourDesignation: { type: String, required: true },
+    boardMemberFourBio: { type: String, required: true },
+    boardMemberFourImage: { type: String, required: true },
+    ceoName: { type: String, required: true },
+    ceoPhoto: { type: String, required: true },
+    ceoAbout: { type: String, required: true },
+    ceoAboutMore: { type: String, required: true },
+    teamMemberOneName: { type: String, required: true },
+    teamMemberOneDesignation: { type: String, required: true },
+    teamMemberOneBio: { type: String, required: true },
+    teamMemberOnePhoto: { type: String, required: true },
+    teamMemberTwoName: { type: String, required: true },
+    teamMemberTwoDesignation: { type: String, required: true },
+    teamMemberTwoBio: { type: String, required: true },
+    teamMemberTwoPhoto: { type: String, required: true },
+    teamMemberThreeName: { type: String, required: true },
+    teamMemberThreeDesignation: { type: String, required: true },
+    teamMemberThreeBio: { type: String, required: true },
+    teamMemberThreePhoto: { type: String, required: true },
+  });
+
+  export const TeamMemberModel = model<TTeamMember>("teamMember", teamMemberSchema);

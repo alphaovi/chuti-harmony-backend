@@ -1,0 +1,20 @@
+export type TOurStory = {
+  storyBannerImage: string;
+  foundationImage: string;
+  foundationTitle: string;
+  foundationDescriptionFirst: string;
+  foundationDescriptionSecond: string;
+  foundationDescriptionReadMore: string;
+  whoWeAreFirstDescription: string;
+  whoWeAreSecondDescription: string;
+  logoImage: string;
+  logoDescriptionFirst: string;
+  logoDescriptionSecond: string;
+  logoDescriptionThird: string;
+  visionTitle: string;
+  visionImage: string;
+  missionTitle: string;
+  misssionImage: string;
+  valueImage: string;
+  valueDescription: string;
+};
