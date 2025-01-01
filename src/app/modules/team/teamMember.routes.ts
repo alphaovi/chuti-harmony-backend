@@ -7,4 +7,6 @@ router.post("/team-member", TeamMemberController.createTeamMember);
 
 router.get("/team-member", TeamMemberController.getLastTeam);
 
+router.patch("/team-member", TeamMemberController.updateLastTeamMember);
+
 export const TeamMemberRoutes = router;
