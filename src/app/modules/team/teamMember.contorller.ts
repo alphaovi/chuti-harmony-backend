@@ -14,6 +14,19 @@ const createTeamMember = catchAsync(async (req, res) => {
   });
 });
 
+
+const getLastTeam = catchAsync(async(req, res) => {
+    const result = await TeamMemberServices.getLastTeamMemberFromDB();
+
+    sendResponse(res, {
+        statusCode: httpStatus.OK,
+        success: true,
+        message: 'Succesfully retrived team member into database.',
+        data: result,
+      });
+})
+
 export const TeamMemberController = {
   createTeamMember,
+  getLastTeam
 };
