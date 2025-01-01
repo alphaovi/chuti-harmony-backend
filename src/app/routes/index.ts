@@ -6,6 +6,7 @@ import { WithnessRoutes } from '../modules/Withness/withness.route';
 import { ExploreProjectRoutes } from '../modules/exploreProject/exploreProject.routes';
 import { ConnectRoutes } from '../modules/connect/connect.routes';
 import { OurStoryRoutes } from '../modules/ourStroy/ourStory.routes';
+import { TeamMemberRoutes } from '../modules/team/teamMember.routes';
 
 const router = Router();
 
@@ -33,6 +34,11 @@ const moduleRoutes = [
   {
     path: '/our-story',
     route: OurStoryRoutes,
+  },
+
+  {
+    path: '/team-member',
+    route: TeamMemberRoutes,
   },
 ];
 
