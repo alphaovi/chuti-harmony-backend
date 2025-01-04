@@ -7,6 +7,8 @@ import { ExploreProjectRoutes } from '../modules/exploreProject/exploreProject.r
 import { ConnectRoutes } from '../modules/connect/connect.routes';
 import { OurStoryRoutes } from '../modules/ourStroy/ourStory.routes';
 import { TeamMemberRoutes } from '../modules/team/teamMember.routes';
+import { TeamTwoRoutes } from '../modules/teamTwo/teamTwo.route';
+import { SeniorTeamRoutes } from '../modules/teamSenior/teamSenior.route';
 
 const router = Router();
 
@@ -39,6 +41,14 @@ const moduleRoutes = [
   {
     path: '/team-member',
     route: TeamMemberRoutes,
+  },
+  {
+    path: '/team-two',
+    route: TeamTwoRoutes,
+  },
+  {
+    path: '/senior-team',
+    route: SeniorTeamRoutes,
   },
 ];
 
