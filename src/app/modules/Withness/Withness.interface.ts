@@ -1,21 +1,21 @@
 export type TWitness = {
     image: string;
-    totalAreaInputOne : string;
+    totalAreaInputOne : number;
     totalAreaInputTwo : string;
     totalAreaInputThree : string;
-    activeYearsInputOne: string;
+    activeYearsInputOne: number;
     activeYearsInputTwo: string;
     activeYearsInputThree: string;
-    completedProjectsInputOne: string;
+    completedProjectsInputOne: number;
     completedProjectsInputTwo: string;
     completedProjectsInputThree: string;
-    numberOfProjectsInputOne: string;
+    numberOfProjectsInputOne: number;
     numberOfProjectsInputTwo: string;
     numberOfProjectsInputThree: string;
-    clientsInputOne: string;
+    clientsInputOne: number;
     clientsInputTwo: string;
     clientsInputThree: string;
-    OtherThingsInputOne : string;
+    OtherThingsInputOne : number;
     OtherThingsInputTwo : string;
     OtherThingsInputThree : string;
 

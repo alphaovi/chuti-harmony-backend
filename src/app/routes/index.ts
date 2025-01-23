@@ -9,6 +9,14 @@ import { OurStoryRoutes } from '../modules/ourStroy/ourStory.routes';
 import { TeamMemberRoutes } from '../modules/team/teamMember.routes';
 import { TeamTwoRoutes } from '../modules/teamTwo/teamTwo.route';
 import { SeniorTeamRoutes } from '../modules/teamSenior/teamSenior.route';
+import { MessageCategoryRoutes } from '../modules/MessageCategory/messageCategory.routes';
+import { LifeAtChutiRoutes } from '../modules/lifeAtChuti/lifeAtChuti.routes';
+import { MessageRoutes } from '../modules/messages/messages.route';
+import { ProjectFullDetailRoute } from '../modules/projectFullDetails/projectFullDetails.route';
+import { NewsEventRoute } from '../modules/newsEvents/newsEvents.route';
+import { InvestmentDataRoute } from '../modules/investment/investmentData.route';
+import { InvestmentPhotoRoute } from '../modules/investment/InvestmentPhoto/InvestmentPhoto.route';
+import { InvestmentTitleRoute } from '../modules/investment/InvestmentTitle/InvestmentTitle.route';
 
 const router = Router();
 
@@ -49,6 +57,38 @@ const moduleRoutes = [
   {
     path: '/senior-team',
     route: SeniorTeamRoutes,
+  },
+  {
+    path: '/message-category',
+    route: MessageCategoryRoutes,
+  },
+  {
+    path: '/life-at-chuti',
+    route: LifeAtChutiRoutes,
+  },
+  {
+    path: '/message',
+    route: MessageRoutes,
+  },
+  {
+    path: '/project-details',
+    route: ProjectFullDetailRoute,
+  },
+  {
+    path: '/news-events',
+    route: NewsEventRoute,
+  },
+  {
+    path: '/investment',
+    route: InvestmentDataRoute,
+  },
+  {
+    path: '/investmentPhoto',
+    route: InvestmentPhotoRoute,
+  },
+  {
+    path: '/investment-title',
+    route: InvestmentTitleRoute,
   },
 ];
 

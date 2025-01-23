@@ -17,7 +17,6 @@ const createExploreProject = catchAsync(async (req, res) => {
 });
 
 const getAllExploreProject = catchAsync(async (req, res) => {
-    
   const result = await ExploreProjectServices.getAllExploreProjectsFromDB();
 
   sendResponse(res, {
@@ -29,12 +28,10 @@ const getAllExploreProject = catchAsync(async (req, res) => {
 });
 
 const deleteSingleExploreProject = catchAsync(async (req, res) => {
-
   const projectId = req.params.projectId;
 
   const result =
     await ExploreProjectServices.deleteExploreProjectFromDB(projectId);
-
 
   sendResponse(res, {
     statusCode: httpStatus.OK,
@@ -47,5 +44,5 @@ const deleteSingleExploreProject = catchAsync(async (req, res) => {
 export const ExploreProjectController = {
   createExploreProject,
   getAllExploreProject,
-  deleteSingleExploreProject
+  deleteSingleExploreProject,
 };
