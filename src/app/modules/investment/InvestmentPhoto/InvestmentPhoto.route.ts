@@ -1,19 +1,21 @@
-import { Router } from "express"
-import { InvestmentPhotoControllers } from "./InvestmentPhoto.controller";
-
+import { Router } from 'express';
+import { InvestementPhotoControllers } from './InvestmentPhoto.controller';
 
 const router = Router();
 
-router.post("/investmentPhoto", InvestmentPhotoControllers.createInvestmentPhoto);
+router.post(
+  '/investment-photo',
+  InvestementPhotoControllers.createInvestmentPhoto,
+);
 
-router.get("/investmentPhoto", InvestmentPhotoControllers.getAllInvestmentPhoto);
+router.get(
+  '/investment-photo',
+  InvestementPhotoControllers.getAllInvestmentPhoto,
+);
 
-router.get("/investmentPhoto/:investmentId", InvestmentPhotoControllers.getSingleInvestmentPhoto);
-
-router.delete("/investmentPhoto/:investmentId", InvestmentPhotoControllers.deleteSingleInvestmentPhoto);
-
-
-
-
+router.delete(
+  '/investment-photo/:investmentPhotoId',
+  InvestementPhotoControllers.deletSingleInvestmentPhoto,
+);
 
 export const InvestmentPhotoRoute = router;

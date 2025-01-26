@@ -7,15 +7,8 @@ const createInvestmentPhotoIntoDB = async (payload: TInvestmentPhoto) => {
   return result;
 };
 
-const getInvestmentPhotoFromDB = async () => {
+const getAllInvestmentPhotosFromDB = async () => {
   const result = await InvestmentPhotoModel.find();
-  return result;
-};
-
-const getSingleInvestmentPhotoFromDB = async (id: string) => {
-  const objectId = new mongoose.Types.ObjectId(id);
-
-  const result = await InvestmentPhotoModel.findOne({ _id: objectId });
   return result;
 };
 
@@ -28,7 +21,6 @@ const deleteSingleInvestmentPhotoFromDB = async (id: string) => {
 
 export const InvestmentPhotoServices = {
   createInvestmentPhotoIntoDB,
-  getInvestmentPhotoFromDB,
-  getSingleInvestmentPhotoFromDB,
-  deleteSingleInvestmentPhotoFromDB,
+  getAllInvestmentPhotosFromDB,
+  deleteSingleInvestmentPhotoFromDB
 };

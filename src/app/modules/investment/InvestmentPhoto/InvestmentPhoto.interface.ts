@@ -1,4 +1,4 @@
 export type TInvestmentPhoto = {
-  investmentImageName: string;
+  name: string;
   investmentImage: string;
 };

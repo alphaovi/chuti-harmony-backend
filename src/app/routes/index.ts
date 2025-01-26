@@ -15,8 +15,8 @@ import { MessageRoutes } from '../modules/messages/messages.route';
 import { ProjectFullDetailRoute } from '../modules/projectFullDetails/projectFullDetails.route';
 import { NewsEventRoute } from '../modules/newsEvents/newsEvents.route';
 import { InvestmentDataRoute } from '../modules/investment/investmentData.route';
-import { InvestmentPhotoRoute } from '../modules/investment/InvestmentPhoto/InvestmentPhoto.route';
 import { InvestmentTitleRoute } from '../modules/investment/InvestmentTitle/InvestmentTitle.route';
+import { InvestmentPhotoRoute } from '../modules/investment/InvestmentPhoto/InvestmentPhoto.route';
 
 const router = Router();
 
@@ -83,9 +83,10 @@ const moduleRoutes = [
     route: InvestmentDataRoute,
   },
   {
-    path: '/investmentPhoto',
+    path: '/investment-photo',
     route: InvestmentPhotoRoute,
   },
+
   {
     path: '/investment-title',
     route: InvestmentTitleRoute,
