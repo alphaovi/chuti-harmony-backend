@@ -4,7 +4,7 @@ import sendResponse from '../../../utils/sendResponse';
 import { InvestmentPhotoServices } from './InvestmentPhoto.service';
 
 const createInvestmentPhoto = catchAsync(async (req, res) => {
-  const result = InvestmentPhotoServices.createInvestmentPhotoIntoDB(req.body);
+  const result =await InvestmentPhotoServices.createInvestmentPhotoIntoDB(req.body);
 
   sendResponse(res, {
     statusCode: httpStatus.OK,
