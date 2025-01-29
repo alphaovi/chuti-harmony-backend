@@ -42,8 +42,24 @@ const getSingleProjectAllDetails = catchAsync(async (req, res) => {
   });
 });
 
+// delete single project details
+const deleteSingleProjectAllDetails = catchAsync(async (req, res) => {
+  const projectId = req.params.projectId;
+
+  const result =
+    await ProjectFullDetailsServices.deleteSingleProjectFromDB(projectId);
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Succesfully deleted project details from database.',
+    data: result,
+  });
+});
+
 export const ProjectFullDetailControllers = {
   createProjectAllDetails,
   getProjectAllDetails,
-  getSingleProjectAllDetails
+  getSingleProjectAllDetails,
+  deleteSingleProjectAllDetails
 };

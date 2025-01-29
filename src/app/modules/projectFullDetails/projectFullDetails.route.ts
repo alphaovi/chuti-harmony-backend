@@ -18,4 +18,9 @@ router.get(
   ProjectFullDetailControllers.getSingleProjectAllDetails,
 );
 
+router.delete(
+  '/project-details/:projectId',
+  ProjectFullDetailControllers.deleteSingleProjectAllDetails,
+);
+
 export const ProjectFullDetailRoute = router;

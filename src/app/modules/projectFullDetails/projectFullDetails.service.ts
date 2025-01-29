@@ -21,10 +21,17 @@ const getSingleProjectAllDetailsFromDB = async (id: string) => {
   return result;
 };
 
-//
+//delete single project details
+const deleteSingleProjectFromDB = async (id: string) => {
+  const objectId = new mongoose.Types.ObjectId(id);
+
+  const result = await ProjectFullDetailsModel.deleteOne({ _id: objectId });
+  return result;
+};
 
 export const ProjectFullDetailsServices = {
   createProjectFullDetailsIntoDB,
   getProjectAllDetailsFromDB,
   getSingleProjectAllDetailsFromDB,
+  deleteSingleProjectFromDB,
 };
