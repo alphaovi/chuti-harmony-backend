@@ -31,14 +31,14 @@
     "@types/node": "^20.12.12",
     "@typescript-eslint/eslint-plugin": "^7.10.0",
     "@typescript-eslint/parser": "^7.10.0",
-    "eslint": "9.x",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.3.0",
     "joi": "^17.13.1",
     "prettier": "^3.2.5",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.10.0",
+    "typescript-eslint": "^8.21.0",
     "zod": "^3.23.8"
   },
   "description": ""
