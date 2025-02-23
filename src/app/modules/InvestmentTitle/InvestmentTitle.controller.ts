@@ -1,7 +1,8 @@
 import httpStatus from 'http-status';
-import catchAsync from '../../../utils/catchAsync';
-import sendResponse from '../../../utils/sendResponse';
+
 import { InvestmentTitleServices } from './InvestmentTitle.service';
+import catchAsync from '../../utils/catchAsync';
+import sendResponse from '../../utils/sendResponse';
 
 const createInvestmentTitle = catchAsync(async (req, res) => {
   const result = await InvestmentTitleServices.createInvestmentTitleIntoDB(
@@ -43,5 +44,5 @@ const updateInvestmentTitle = catchAsync(async (req, res) => {
 export const InvestmentTitleControllers = {
   createInvestmentTitle,
   getInvestmentTitle,
-  updateInvestmentTitle
+  updateInvestmentTitle,
 };

@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
-import { TInvestmentPhoto } from './InvestmentPhoto.interface';
-import { InvestmentPhotoModel } from './InvestmentPhoto.model';
+import { TInvestmentPhoto } from './investmentPhoto.interface';
+import { InvestmentPhotoModel } from './investmentPhoto.model';
+
 
 const createInvestmentPhotoIntoDB = async (payload: TInvestmentPhoto) => {
   const result = await InvestmentPhotoModel.create(payload);

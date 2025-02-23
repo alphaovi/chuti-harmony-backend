@@ -1,5 +1,6 @@
 import { Router } from 'express';
-import { InvestementPhotoControllers } from './InvestmentPhoto.controller';
+import { InvestementPhotoControllers } from './investmentPhoto.controller';
+
 
 const router = Router();
 

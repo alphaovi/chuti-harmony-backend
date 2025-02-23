@@ -1,5 +1,6 @@
 import { model, Schema } from 'mongoose';
-import { TInvestmentPhoto } from './InvestmentPhoto.interface';
+import { TInvestmentPhoto } from './investmentPhoto.interface';
+
 
 const InvestmentPhotoSchema = new Schema<TInvestmentPhoto>(
   {

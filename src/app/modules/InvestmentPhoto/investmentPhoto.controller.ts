@@ -1,10 +1,13 @@
 import httpStatus from 'http-status';
-import catchAsync from '../../../utils/catchAsync';
-import sendResponse from '../../../utils/sendResponse';
-import { InvestmentPhotoServices } from './InvestmentPhoto.service';
+
+import catchAsync from '../../utils/catchAsync';
+import sendResponse from '../../utils/sendResponse';
+import { InvestmentPhotoServices } from './investmentPhoto.service';
 
 const createInvestmentPhoto = catchAsync(async (req, res) => {
-  const result =await InvestmentPhotoServices.createInvestmentPhotoIntoDB(req.body);
+  const result = await InvestmentPhotoServices.createInvestmentPhotoIntoDB(
+    req.body,
+  );
 
   sendResponse(res, {
     statusCode: httpStatus.OK,
@@ -43,5 +46,5 @@ const deletSingleInvestmentPhoto = catchAsync(async (req, res) => {
 export const InvestementPhotoControllers = {
   createInvestmentPhoto,
   getAllInvestmentPhoto,
-  deletSingleInvestmentPhoto
+  deletSingleInvestmentPhoto,
 };

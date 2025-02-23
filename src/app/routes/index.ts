@@ -15,8 +15,13 @@ import { MessageRoutes } from '../modules/messages/messages.route';
 import { ProjectFullDetailRoute } from '../modules/projectFullDetails/projectFullDetails.route';
 import { NewsEventRoute } from '../modules/newsEvents/newsEvents.route';
 import { InvestmentDataRoute } from '../modules/investment/investmentData.route';
-import { InvestmentTitleRoute } from '../modules/investment/InvestmentTitle/InvestmentTitle.route';
-import { InvestmentPhotoRoute } from '../modules/investment/InvestmentPhoto/InvestmentPhoto.route';
+import { whyChutiCoverRoute } from '../modules/whyChuti/whyChuti.routes';
+import { whyChutiBestRoute } from '../modules/whyChutiBest/whyChutiBest.route';
+import { FirstOfChutiRoute } from '../modules/firstOfChuti/firstOfChuti.route';
+import { OurBusinessRoute } from '../modules/ourBusiness/ourBusiness.route';
+import { OurBusinessPhotosRoute } from '../modules/OurBusinessPhotos/ourBusinessPhotos.route';
+import { InvestmentPhotoRoute } from '../modules/InvestmentPhoto/investmentPhoto.route';
+import { InvestmentTitleRoute } from '../modules/InvestmentTitle/InvestmentTitle.route';
 
 const router = Router();
 
@@ -90,6 +95,26 @@ const moduleRoutes = [
   {
     path: '/investment-title',
     route: InvestmentTitleRoute,
+  },
+  {
+    path: '/why-chuti',
+    route: whyChutiCoverRoute,
+  },
+  {
+    path: '/why-chuti-best',
+    route: whyChutiBestRoute,
+  },
+  {
+    path: '/first-of-chuti',
+    route: FirstOfChutiRoute,
+  },
+  {
+    path: '/our-business',
+    route: OurBusinessRoute,
+  },
+  {
+    path: '/our-business-photos',
+    route: OurBusinessPhotosRoute,
   },
 ];
 
