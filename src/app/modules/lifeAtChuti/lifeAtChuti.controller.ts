@@ -42,8 +42,24 @@ const updateLastDataOfLifeAtChuti = catchAsync(async (req, res) => {
   });
 });
 
+// delete single life at data
+const deleteSingleLifeAtChutiData = catchAsync(async (req, res) => {
+  const lifeAtChutiId = req.params.lifeAtChutiId;
+
+  const result =
+    await LifeAtChutiServices.deleteSingleLifeAtChutiPhoto(lifeAtChutiId);
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Successfully deleted the life at chuti data',
+    data: result,
+  });
+});
+
 export const LifeAtChutiControllers = {
   createChutiData,
   getLastLifeAtChutiData,
   updateLastDataOfLifeAtChuti,
+  deleteSingleLifeAtChutiData,
 };

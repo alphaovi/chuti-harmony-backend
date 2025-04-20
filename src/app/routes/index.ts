@@ -22,6 +22,8 @@ import { OurBusinessRoute } from '../modules/ourBusiness/ourBusiness.route';
 import { OurBusinessPhotosRoute } from '../modules/OurBusinessPhotos/ourBusinessPhotos.route';
 import { InvestmentPhotoRoute } from '../modules/InvestmentPhoto/investmentPhoto.route';
 import { InvestmentTitleRoute } from '../modules/InvestmentTitle/InvestmentTitle.route';
+import { OurClientsRoute } from '../modules/ourClients/OurClient.route';
+import { PopUpRoutes } from '../modules/popup/popup.route';
 
 const router = Router();
 
@@ -116,6 +118,14 @@ const moduleRoutes = [
     path: '/our-business-photos',
     route: OurBusinessPhotosRoute,
   },
+  {
+    path: '/our-clients',
+    route: OurClientsRoute,
+  },
+  {
+    path: "/pop-up",
+    route: PopUpRoutes
+  }
 ];
 
 moduleRoutes.forEach((route) => router.use(route.path, route.route));
